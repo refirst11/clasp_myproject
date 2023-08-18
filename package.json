@@ -1,0 +1,22 @@
+{
+  "name": "clasp",
+  "version": "1.0.0",
+  "description": "Automation software",
+  "keywords": [
+    "SpreadSheets",
+    "App Script",
+    "GCP",
+    "clasp",
+    "TypeScript",
+    "Version management"
+  ],
+  "scripts": {
+    "all": "clasp push && clasp run main"
+  },
+  "author": "S.Watanabe",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.66",
+    "typescript": "^4.9.5"
+  }
+}

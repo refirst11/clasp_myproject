@@ -14,7 +14,9 @@ function main() {
     "react-text-scaler",
     "react-fukuwarai",
   ];
+  let array = [];
   let totalAll = 0;
+
   for (const i of libs) {
     const response = UrlFetchApp.fetch(
       `https://api.npmjs.org/downloads/point/2023-04-07:${current}/${i}`
@@ -22,10 +24,13 @@ function main() {
     const data = JSON.parse(response.getContentText());
     const title = data.package;
     const total = data.downloads;
-    sheet?.appendRow([title, total]);
+    // sheet?.appendRow([title, total]);
+    array.push([title, total]);
+
     totalAll += total;
   }
-  sheet?.appendRow(["Total-All", totalAll]);
+  array.push(["Total-All", totalAll]);
+  sheet?.getRange("A1:B5").setValues(array);
 
   return (
     "Function deployed and execution is successfully!! " +

@@ -8,3 +8,5 @@ SpreadSheets and App Script.
 - SpreadSheets
 - GCP OAuth
 - TypeScript
+
+clasp login --creds creds.json

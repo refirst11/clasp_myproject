@@ -31,7 +31,7 @@ function main() {
     totalAll += total;
   }
   array.push(["Total-All", totalAll]);
-  sheet?.getRange("A1:B6").setValues(array);
+  sheet?.getRange("A2:B7").setValues(array);
 
   return (
     "Function deployed and execution is successfully!! " +

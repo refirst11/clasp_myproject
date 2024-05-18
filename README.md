@@ -15,7 +15,18 @@ API とサービス」 > 「認証情報」に移動します。
 アプリケーションタイプを「デスクトップアプリ」に設定します。  
 クライアント ID とクライアントシークレットを creds.json の client_id と client_secret にそれぞれ記述します。
 
+## gitignore File
+
+.clasp.json  
+.clasprc.json  
+appsscript.json  
+creds.json  
+package-lock.json
+
+## command line
+
 clasp clone <projectId>  
 clasp login --creds creds.json  
 clasp push  
-clasp run main
+clasp run main  
+clasp deploy

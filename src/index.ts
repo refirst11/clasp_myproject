@@ -14,6 +14,7 @@ function main() {
     "react-text-scaler",
     "react-fukuwarai",
     "react-navigate-motion",
+    "firemotion",
   ];
   let array = [];
   let totalAll = 0;
@@ -31,7 +32,7 @@ function main() {
     totalAll += total;
   }
   array.push(["Total-All", totalAll]);
-  sheet?.getRange("A2:B7").setValues(array);
+  sheet?.getRange("A2:B8").setValues(array);
 
   return (
     "Function deployed and execution is successfully!! " +
